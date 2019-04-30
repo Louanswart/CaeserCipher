@@ -1,16 +1,17 @@
 
 #include<stdio.h>
-#include<strings.h>
+#include<string.h>
 
 char *encryption(char[]);
 char *decryption(char[]);
  
 int main(){
-   int i, Key, Choice, Flag = 0;
+   int Choice;
    char Message[255];
    char *C_Text;
    
-   printf("Enter you message for Encryption/Decryption: ");
+   
+   printf("Enter you message for Encryption/Decryption:\n");
    scanf("%[^\n]", Message);
    printf("Your message is: %s", Message);
    
@@ -93,5 +94,6 @@ char *decryption(char cipher_Text[]){
 		}
 	printf("\nDecrypted message is: %s", cipher);
 	}
+	return cipher_Text;
 }
 
